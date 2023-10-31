@@ -4,7 +4,7 @@ import grails.converters.JSON
 
 class StudentController {
 
-    createStudent(){
+    def createStudent(){
         Student createStu = new Student()
         def requestJSON = request.JSON
         createStu.firstName = requestJSON.firstName

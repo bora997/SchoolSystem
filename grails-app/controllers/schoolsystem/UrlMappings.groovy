@@ -12,5 +12,7 @@ class UrlMappings {
         "/"(view:"/index")
         "500"(view:'/error')
         "404"(view:'/notFound')
+        //student
+        "/student/create-student"(controller: "Student",action: "createStudent")
     }
 }

@@ -14,5 +14,6 @@ class UrlMappings {
         "404"(view:'/notFound')
         //student
         "/student/create-student"(controller: "Student",action: "createStudent")
+        "/student/listStudent"(controller: "Student",action: "listStudent")
     }
 }

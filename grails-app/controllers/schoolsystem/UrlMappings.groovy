@@ -15,5 +15,6 @@ class UrlMappings {
         //student
         "/student/create-student"(controller: "Student",action: "createStudent")
         "/student/listStudent"(controller: "Student",action: "listStudent")
+        "/student/detailStudent"(controller: "Student",action: "detailStudent")
     }
 }

@@ -32,5 +32,20 @@ class StudentController {
 
 
     }
+    def updateStudent(){
+        Long id=params.long("id")
+        def requestJSON=request.JSON
+        Student student=Student.get(id)
+        student.firstName = requestJSON.firstName
+        student.lastName = requestJSON.lastName
+        student.age = requestJSON.age
+        student.gender = requestJSON.gender
+        student.email = requestJSON.email
+        student.contactNumber = requestJSON.contactNumber
+        student.dateOfBirth = utiDateService.convertStringToDate(requestJSON.dateOfBirth)
+        student.save(flush:true)
+        render student as JSON
+
+    }
 
 }

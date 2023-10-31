@@ -43,5 +43,9 @@ class StudentController {
         render student as JSON
 
     }
+    def listStudent(){
+        def student=Student.list()
+        render studet as JSON
+    }
 
 }

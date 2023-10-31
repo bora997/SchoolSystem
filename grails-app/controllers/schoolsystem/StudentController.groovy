@@ -25,4 +25,12 @@ class StudentController {
         def student=Student.list()
         render student as JSON
     }
+    def detailStudent(){
+        Long id= params.long("id")
+        Student student=Student.get(id)
+        render student as JSON
+
+
+    }
+
 }

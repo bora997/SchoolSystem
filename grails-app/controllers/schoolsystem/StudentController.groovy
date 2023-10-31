@@ -47,5 +47,17 @@ class StudentController {
         def student=Student.list()
         render student as JSON
     }
+    def deleteStudent(){
+        Long id=params.long("id")
+        Student student=Student.get(id)
+        student.delete(flush: true)
+        render student as JSON
+
+
+
+
+
+
+    }
 
 }

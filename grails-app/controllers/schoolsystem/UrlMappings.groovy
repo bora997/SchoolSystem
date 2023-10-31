@@ -17,5 +17,6 @@ class UrlMappings {
         "/student/listStudent"(controller: "Student",action: "listStudent")
         "/student/detailStudent"(controller: "Student",action: "detailStudent")
         "/student/updateStudent"(controller: "Student",action: "updateStudent")
+        "/student/ deleteStudent"(controller: "Student",action: " deleteStudent")
     }
 }
